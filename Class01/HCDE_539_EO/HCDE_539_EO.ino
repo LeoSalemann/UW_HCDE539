@@ -26,22 +26,33 @@ void setup() {
   pinMode(led_green, OUTPUT);
 }
 
-void loop() {
-  // turn the green LED on and the other LEDs off
-  digitalWrite(led_red, LOW); 
-  digitalWrite(led_yellow, LOW);
-  digitalWrite(led_green, HIGH);
-  delay(2000);    // wait 2 seconds
-  
-  // turn the yellow LED on and the other LEDs off
-  digitalWrite(led_red, LOW);   
-  digitalWrite(led_yellow, HIGH);
-  digitalWrite(led_green, LOW);
-  delay(1000);   // wait 1 second
-  
+void stop (int stop_time) {
   // turn the red LED on and the other LEDs off
   digitalWrite(led_red, HIGH);  
   digitalWrite(led_yellow, LOW);
   digitalWrite(led_green, LOW);
-  delay(3000);  // wait 3 seconds        
+  delay(stop_time * 1000);  // wait stop_time seconds 
+}
+
+void caution (int caution_time) {
+  // turn the yellow LED on and the other LEDs off
+  digitalWrite(led_red, LOW);   
+  digitalWrite(led_yellow, HIGH);
+  digitalWrite(led_green, LOW);
+  delay(caution_time * 1000);   // wait caution_time seconds
+}
+
+void go (int go_time) {
+  // turn the green LED on and the other LEDs off
+  digitalWrite(led_red, LOW); 
+  digitalWrite(led_yellow, LOW);
+  digitalWrite(led_green, HIGH);
+  delay(go_time * 1000);  // wait go_time seconds 
+}
+
+
+void loop() {
+  go(2);
+  caution(1);
+  stop(10);
 }
