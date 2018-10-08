@@ -26,6 +26,11 @@ void setup() {
   pinMode(led_green, OUTPUT);
 }
 
+/*
+ * Function stop()
+ * Turns red LED on; the rest off.
+ * Maintains state for stop_time seconds.
+ */
 void stop (int stop_time) {
   // turn the red LED on and the other LEDs off
   digitalWrite(led_red, HIGH);  
@@ -34,6 +39,11 @@ void stop (int stop_time) {
   delay(stop_time * 1000);  // wait stop_time seconds 
 }
 
+/*
+ * Function caution()
+ * Turns yellow LED on; the rest off.
+ * Maintains state for caution_time seconds.
+ */
 void caution (int caution_time) {
   // turn the yellow LED on and the other LEDs off
   digitalWrite(led_red, LOW);   
@@ -42,6 +52,11 @@ void caution (int caution_time) {
   delay(caution_time * 1000);   // wait caution_time seconds
 }
 
+/*
+ * Function go()
+ * Turns green LED on; the rest off.
+ * Maintains state for go_time seconds.
+ */
 void go (int go_time) {
   // turn the green LED on and the other LEDs off
   digitalWrite(led_red, LOW); 
