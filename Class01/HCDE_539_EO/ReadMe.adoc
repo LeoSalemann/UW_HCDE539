@@ -127,7 +127,7 @@ void loop() {
 
 === Pics
 .Schematic
-image::./TinkerCAD_TrafficLight_V1.png[]
+image::./LeosTinkerCAD_RevC.PNG[]
 
 .Finished Product
 image::./Metro_And_Breadboard.jpg[]
