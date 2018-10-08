@@ -48,6 +48,7 @@ From your Arduino IDE, verifiy the code then upload it to your board.
 This project is released under a {Attribution 3.0(CC-BY 3.0)} License.
 
 ifdef::backend-pdf[<<<]
+
 === Contributing
 To contribute to this project please contact leos <leos@uw.edu>
 
