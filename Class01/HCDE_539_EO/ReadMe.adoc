@@ -22,6 +22,7 @@ October 7, 2018
 
 a. Open Tinkercad circuit project https://www.tinkercad.com/things/bmWjk7KrzkS-arduino-led-traffic-light-modular-code[Arduino LED Traffic Light - Modular Code]
 b. Download the code from Tinkercad, upload to your Arduino IDE (desktop or cloud versions should both work).
+
 == Step 2: Assemble the circuit
 
 a. Wire up the Arduino Uno (or Adafruit metro), LED's, resistors, and breadboard as shown in the tinkercad drawing.
