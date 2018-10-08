@@ -1,19 +1,20 @@
 :Author: leos
 :Email: leos@uw.edu
 :Date: 07/10/2018
-:Revision: version#
+:Revision: version#c
 :License: Public Domain
 
-= Project: {Project}
+= Project: Arduino-Driven LED Traffic Light
 
-Describe your project
+Exercise 0, HCDE 539 Physical Computing, University of Washington
+October 7, 2018
 
 == Step 1: Installation
 Please describe the steps to install this project.
 
 For example:
 
-1. Open this file
+1. Open Tinkercad circuit project [Arduino LED Traffic Light - Modular Code](https://www.tinkercad.com/things/bmWjk7KrzkS-arduino-led-traffic-light-modular-code)
 2. Edit as you like
 3. Release to the World!
 
