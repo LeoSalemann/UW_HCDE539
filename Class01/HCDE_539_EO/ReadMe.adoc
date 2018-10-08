@@ -4,9 +4,12 @@
 :Revision: version#c
 :License: Public Domain
 
-= Project: Arduino-Driven LED Traffic Light
-
-Exercise 0, HCDE 539 Physical Computing, University of Washington
+= Arduino-Driven LED Traffic Light
+Leo J.Salemann, leow@uw.edu
+Designed and simulated with https://www.tinkercad.com[Autodesk(R) Tinkercad(TM)]
+Deployed to Adafruit Metro with https://create.arduino.cc[Ardino Web Editor]
+Posted to https://create.arduino.cc/projecthub/projects/9cd996[Arduino Project Hub]
+Submitted for Exercise 0, HCDE 539 Physical Computing, University of Washington
 October 7, 2018
 
 == Step 1: Installation
