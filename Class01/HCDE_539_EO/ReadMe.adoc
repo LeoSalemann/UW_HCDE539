@@ -53,6 +53,13 @@ Bill of the materials needed for this project.
 | A1 | Arduino Zero     | ABX00066    | 1        
 |===
 
+=== Pics
+.Schematic
+image::./TinkerCAD_TrafficLight_V1.png[]
+
+.Finished Product
+image::./Metro_And_Breadboard.jpg[]
+
 === Further Reading
 https://github.com/LeoSalemann/UW_HCDE539/tree/master/Class01/HCDE_539_EO[Github Repo]
 https://create.arduino.cc/projecthub/leos/hcde-539-assignment-1-a-3-led-traffic-light-9cd996[Arduino Project Hub]
