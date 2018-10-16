@@ -152,7 +152,7 @@ image::./Moto_SerialMonitorAnnotated.jpg[]
 The challenge with this one was getting those thin wires to stay in the breadboard. Ended up cutting a couple https://www.adafruit.com/product/153[jumper wires] in half, stripping the cut ends, and twisting them onto the motor leads.
 
 = Wildcard (Potentiometer)
-For my wild card, I chose the https://www.adafruit.com/product/356potentiometer], using the wiring suggested an https://learn.adafruit.com/adafruit-arduino-lesson-8-analog-inputs/an-experiment[adafruit experiment]
+For my wild card, I chose the https://www.adafruit.com/product/356[potentiometer], using the wiring suggested an https://learn.adafruit.com/adafruit-arduino-lesson-8-analog-inputs/an-experiment[adafruit experiment].
 
 == Photos
 image::./WildCard_Photo.jpg[]
