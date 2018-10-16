@@ -21,17 +21,11 @@ October 15, 2018
 = Overview
 For the initial design and implementation, I created a "Sensor Smorgasbord" project in which I combined all four individual builds onto one bread board, and wrote a single program to run everything. The project was "born in the cloud" using TinkerCad and the Arduino Web Editor. I then reimplmented the Smorgasboard in Fritzing, then made copies to reduce it down to Light sensor only, Magnetic Sensor only, etc. 
 
+== Breadboard
 .Sensor Smorgasbord (Fritzlab & Photo)
 image::./SensorSmorgasbord.jpg[]
 
-= Light Sensor
-The light sensor is implemented according to the adaffruit description at https://www.adafruit.com/product/161. One pin is connected to 5V; the other is connected to Arduino Analog pin A0 as well as a grounded 220 ohm resistor. The code initializes the pin as input, reads it, and prints a value to the serial monitor. Values range from 22 in a dark room, 735 under regular room lighting, and 1017  when illuminted by an iPhone "flashlight" at point-blank range.
-
-== Photos
-image::./LightSensor_Photo.jpg[]
-
-== Sketch Code
-
+== Sketch code (same code used for all circuits)
 ----
 /****************************************
  * Leo Salemann
@@ -111,7 +105,13 @@ void loop()
   delay (500);
 }
 ----
- 
+
+= Light Sensor
+The light sensor is implemented according to the adaffruit description at https://www.adafruit.com/product/161. One pin is connected to 5V; the other is connected to Arduino Analog pin A0 as well as a grounded 220 ohm resistor. The code initializes the pin as input, reads it, and prints a value to the serial monitor. Values range from 22 in a dark room, 735 under regular room lighting, and 1017  when illuminted by an iPhone "flashlight" at point-blank range.
+
+== Photos
+image::./LightSensor_Photo.jpg[]
+
 == Schematic
 image::./LightSensor_Schematic.jpg[]
 
@@ -127,8 +127,6 @@ Describe your project
 == Photos
 image::./MagneticSensor_Photo.jpg[]
 
-== Sketch Code
-
 == Schematic
 image::./MagneticSensor_Schematic.jpg[]
 
@@ -143,9 +141,6 @@ Describe your project
 == Photos
 image::./Motor_Photo.jpg[]
 
-== Sketch Code
-
- 
 == Schematic
 image::./Motor_Schematic.jpg[]
 
@@ -159,8 +154,6 @@ Describe your project
 
 == Photos
 image::./WildCard_Photo.jpg[]
-
-== Sketch Code
 
 == Schematic
 image::./WildcardPOT_Schematic.jpg[]
