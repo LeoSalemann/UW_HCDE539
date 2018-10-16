@@ -17,6 +17,7 @@ Posted to https://create.arduino.cc/projecthub/projects/9cd996[Arduino Project H
 Submitted for Exercise 1, HCDE 539 Physical Computing, University of Washington
 
 October 15, 2018
+
 = Overview
 
 = Light Sensor
