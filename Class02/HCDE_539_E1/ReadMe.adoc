@@ -19,20 +19,33 @@ Submitted for Exercise 1, HCDE 539 Physical Computing, University of Washington
 October 15, 2018
 
 = Overview
-For the initial design and implementation, I created a "Sensor Smorgasbord" project in which I combined all four individual builds onto one bread board, and wrote a single program to run everything.
+For the initial design and implementation, I created a "Sensor Smorgasbord" project in which I combined all four individual builds onto one bread board, and wrote a single program to run everything. The project was "born in the cloud" using TinkerCad and the Arduino Web Editor. I then reimplmented the Smorgasboard in Fritzing, then made copies to reduce it down to Light sensor only, Magnetic Sensor only, etc. 
+
+.Sensor Smorgasbord (Fritzlab)
+image::./SerialMoitor_PhotoSensor.PNG[]
+
+.Sensor Smorgasbord (Breadboard)
+image::./BreadboardPhoto.jpg[]
 
 = Light Sensor
-Describe your project
+The light sensor is implemented according to the adaffruit description at https://www.adafruit.com/product/161. One pin is connected to 5V; the other is connected to Arduino Analog pin A0 as well as a grounded 220 ohm resistor. The code initializes the pin as input, reads it, and prints a value to the serial monitor. Values range from 22 in a dark room, 735 under regular room lighting, and 1017  when illuminted by an iPhone "flashlight" at point-blank range.
 
 == Photos
+.Fritzlab
+image::./pic.jpg[]
+
+.Breadboard
+image::./pic.jpg[]
 
 == Sketch Code
 
 == Schematic
 
 == Serial Monitor Output
+image::./SerialMoitor_PhotoSensorMarkUp.jpg[]
 
 == Problems, Successes Learnings
+Switch from 10kOhm to 220Ohm resistor.
 
 = Magnetic Sensor
 Describe your project
