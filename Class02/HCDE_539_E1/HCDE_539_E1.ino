@@ -1,10 +1,14 @@
-
-/*
+/****************************************
+ * Leo Salemann
+ * HCDE 539 Physical Computing
+ * University of Washinton
+ * Assignment E0 Traffic Light
+ * 
  * sources: 
  * https://www.adafruit.com/product/161
  * Potentiometery code
  * https://learn.adafruit.com/adafruit-arduino-lesson-8-analog-inputs/an-experiment
- */
+ *****************************************/
 
 // Set some pins & other constants
 const int pinPhotoSensor  = A0;   // must be an analog pin !!
