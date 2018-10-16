@@ -31,7 +31,18 @@ The light sensor is implemented according to the adaffruit description at https:
 image::./LightSensor_Photo.jpg[]
 
 == Sketch Code
-
+----
+/****************************************
+ * Leo Salemann
+ * HCDE 539 Physical Computing
+ * University of Washinton
+ * Assignment E0 Traffic Light
+ * 
+ * Originally from Tinkercad > Getting Started > Editing Components
+ * link: https://www.tinkercad.com/things/dTAcB2IUt0I-editing-components/editel?collectionid=OIYJ88OJ3OPN3EA&lessonid=EFU6PEHIXGFUR1J&projectid=OIYJ88OJ3OPN3EA#/lesson-viewer
+ *****************************************/
+ ----
+ 
 == Schematic
 image::./LightSensor_Schematic.jpg[]
 
@@ -65,6 +76,7 @@ image::./Motor_Photo.jpg[]
 
 == Sketch Code
 
+ 
 == Schematic
 image::./Motor_Schematic.jpg[]
 
