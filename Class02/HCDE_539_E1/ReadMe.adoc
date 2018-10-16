@@ -31,6 +31,7 @@ The light sensor is implemented according to the adaffruit description at https:
 image::./LightSensor_Photo.jpg[]
 
 == Sketch Code
+
 ----
 /****************************************
  * Leo Salemann
@@ -41,6 +42,7 @@ image::./LightSensor_Photo.jpg[]
  * Originally from Tinkercad > Getting Started > Editing Components
  * link: https://www.tinkercad.com/things/dTAcB2IUt0I-editing-components/editel?collectionid=OIYJ88OJ3OPN3EA&lessonid=EFU6PEHIXGFUR1J&projectid=OIYJ88OJ3OPN3EA#/lesson-viewer
  *****************************************/
+ 
  ----
  
 == Schematic
