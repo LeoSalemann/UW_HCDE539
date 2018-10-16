@@ -22,7 +22,7 @@ October 15, 2018
 For the initial design and implementation, I created a "Sensor Smorgasbord" project in which I combined all four individual builds onto one bread board, and wrote a single program to run everything. The project was "born in the cloud" using TinkerCad and the Arduino Web Editor. I then reimplmented the Smorgasboard in Fritzing, then made copies to reduce it down to Light sensor only, Magnetic Sensor only, etc. 
 
 .Sensor Smorgasbord (Fritzlab)
-image::./SerialMoitor_PhotoSensor.PNG[]
+image::./SensorSmorgasbord.PNG[]
 
 .Sensor Smorgasbord (Breadboard)
 image::./BreadboardPhoto.jpg[]
@@ -32,7 +32,7 @@ The light sensor is implemented according to the adaffruit description at https:
 
 == Photos
 .Fritzlab
-image::./pic.jpg[]
+image::./LightSensorSchematic.PNG.PNG[]
 
 .Breadboard
 image::./pic.jpg[]
