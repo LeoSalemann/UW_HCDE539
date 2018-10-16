@@ -19,7 +19,7 @@ Submitted for Exercise 1, HCDE 539 Physical Computing, University of Washington
 October 15, 2018
 
 = Overview
-For the initial design and implementation, I created a "Sensor Smorgasbord" project in which I combined all four individual builds onto one bread board, and wrote a single program to run everything.
+For the initial design and implementation, I created a "Sensor Smorgasbord" project in which I combined all four individual builds onto one bread board, and wrote a single program to run everything. The project was "born in the cloud" using TinkerCad and the Arduino Web Editor. I then reimplmented the Smorgasboard in Fritzing, then made copies to reduce it down to Light sensor only, Magnetic Sensor only, etc. 
 
 = Light Sensor
 Describe your project
