@@ -23,7 +23,7 @@ For the initial design and implementation, I created a "Sensor Smorgasbord" proj
 
 == Breadboard
 .Sensor Smorgasbord (Fritzlab & Photo)
-image::./SensorSmorgasbord.jpg[]
+image::./pics/SensorSmorgasbord.jpg[]
 
 == Sketch code (same code used for all circuits)
 ----
