@@ -2,7 +2,7 @@
  * Leo Salemann
  * HCDE 539 Physical Computing
  * University of Washinton
- * Assignment E0 Traffic Light
+ * Assignment E1 Individual Builds
  * 
  * sources: 
  * https://www.adafruit.com/product/161
