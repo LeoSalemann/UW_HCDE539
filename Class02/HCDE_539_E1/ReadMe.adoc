@@ -119,10 +119,10 @@ image::./LightSensor_Schematic.jpg[]
 image::./LightSensor_SerialMonitorAnnotated.jpg[]
 
 == Problems, Successes Learnings
-Switch from 10kOhm to 220Ohm resistor.
+Didn't get good readings withe the recommended 10 kOhm resistor; worked much better with 220 Ohms.
 
 = Magnetic Sensor
-Describe your project
+Per class instructions, used a temperature sensor for schematics. Relied on https://cdn-shop.adafruit.com/datasheets/US5881_rev007.pdf[Melexis data sheet] from https://www.adafruit.com/product/158[adafruit product page] for actual pin out and magnetic properties.
 
 == Photos
 image::./MagneticSensor_Photo.jpg[]
@@ -134,9 +134,10 @@ image::./MagneticSensor_Schematic.jpg[]
 image::./MagneticSesnor_SerialMonitorAnnotated.jpg[]
 
 == Problems, Successes Learnings
+Took awhile get the reading to respond to the rare earth magnet.  This time, I elminated the resistor completely. Also found that the hall effect only responds to one pole (South I believe) from the magnet.  Found this out empirically by waving the magnet and watching the serial monitor.  Looking back at the data sheet, it's badically what they predicted.
 
 = Motor
-Describe your project
+A quick look at the datashet for the https://www.adafruit.com/product/169[servo], suggested it's more for digital rather than analog interfacing.  From what little I know about servos, their motion is limited, in contrast to a free spinning motor.  So for this one, I skipped the servo and used the https://www.adafruit.com/product/1201[vibrating mini motor disc] instead.
 
 == Photos
 image::./Motor_Photo.jpg[]
@@ -148,9 +149,10 @@ image::./Motor_Schematic.jpg[]
 image::./Moto_SerialMonitorAnnotated.jpg[]
 
 == Problems, Successes Learnings
+The challenge with this one was getting those thin wires to stay in the breadboard. Ended up cutting a couple https://www.adafruit.com/product/153[jumper wires] in half, stripping the cut ends, and twisting them onto the motor leads.
 
 = Wildcard (Potentiometer)
-Describe your project
+For my wild card, I chose the https://www.adafruit.com/product/356potentiometer], using the wiring suggested an https://learn.adafruit.com/adafruit-arduino-lesson-8-analog-inputs/an-experiment[adafruit experiment]
 
 == Photos
 image::./WildCard_Photo.jpg[]
@@ -162,7 +164,7 @@ image::./WildcardPOT_Schematic.jpg[]
 image::./WildCardPOT_SerialMonitorAnnotated.jpg[]
 
 == Problems, Successes, Learnings
-
+This one went pretty smoothly, once I found the breadboard experiment.
 
 === Help
 This document is written in the _AsciiDoc_ format, a markup language to describe documents. 
