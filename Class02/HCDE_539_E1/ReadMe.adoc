@@ -4,7 +4,7 @@
 :Revision: version#
 :License: Public Domain
 
-= Individual Builds (Sensors, Motors, wiledard)
+= Individual Builds (Sensors, Motors, Wildcard)
 
 Leo J.Salemann, leow@uw.edu
 
