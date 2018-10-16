@@ -36,7 +36,7 @@ image::./LightSensor_Photo.jpg[]
 image::./LightSensor_Schematic.jpg[]
 
 == Serial Monitor Output
-image::./LightSensor_SerialMonitorAnnotated.jpg]
+image::./LightSensor_SerialMonitorAnnotated.jpg[]
 
 == Problems, Successes Learnings
 Switch from 10kOhm to 220Ohm resistor.
