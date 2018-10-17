@@ -1,0 +1,26 @@
+#######################################
+# Syntax Coloring Map For ButtonLib
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Button	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+checkButtonAction	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+NONE	LITERAL1
+CLICKED	LITERAL1
+HELD_CLICKED	LITERAL1
+
+# deprecated
+PRESSED	LITERAL1
+HELD	LITERAL1
