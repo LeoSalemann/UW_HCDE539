@@ -6,6 +6,7 @@
  * 
  * Sources: 
  *   UW buzzing Demo
+ *   https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/
  *****************************************/
  
  #include <Button.h>
@@ -35,7 +36,7 @@ void setup()
 void playTune (int milliseconds){
   // buzzing = true;
   digitalWrite(ledPin, HIGH);
-  tone (buzzPin, 400, 100);  
+  tone (buzzPin, 400, milliseconds);  
   Serial.println("buzz...");
   
   delay(milliseconds);
@@ -55,25 +56,4 @@ void loop()
     Serial.println("pressed");
     playTune(1000);
   } 
-
-/*  
-  if (action == Button::PRESSED) {
-    Serial.println("pressed");
-    buzzing = ! buzzing;
-    Serial.println(buzzing);
-  } else {
-    Serial.println("no press");
-  }
-*/
-  
-/*
- // Serial.println(buzzing);
-  if (buzzing) {
-    digitalWrite(ledPin, HIGH);
-    tone (buzzPin, 400, 100);
-  } else {
-    digitalWrite(ledPin, LOW);
-    noTone(buzzPin);
-  }
-*/
 }
