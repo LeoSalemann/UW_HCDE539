@@ -23,7 +23,7 @@ For the initial design and implementation, I created a "Sensor Smorgasbord" proj
 
 == Breadboard
 .Sensor Smorgasbord (Fritzlab & Photo)
-image::./pics/SensorSmorgasbord.jpg[]
+image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/Class02/HCDE_539_E1/pics/SensorSmorgasbord.jpg?raw=true[alt="Full Breadboard.",width=100%,height=100%]
 
 == Sketch code (same code used for all circuits)
 ----
@@ -110,13 +110,13 @@ void loop()
 The light sensor is implemented according to the adaffruit description at https://www.adafruit.com/product/161. One pin is connected to 5V; the other is connected to Arduino Analog pin A0 as well as a grounded 220 ohm resistor. The code initializes the pin as input, reads it, and prints a value to the serial monitor. Values range from 22 in a dark room, 735 under regular room lighting, and 1017  when illuminted by an iPhone "flashlight" at point-blank range.
 
 == Photos
-image::./pics/LightSensor_Photo.jpg[]
+image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/Class02/HCDE_539_E1/pics/LightSensor_Photo.jpg?raw=true[alt="jpg image.",width=100%,height=100%]
 
 == Schematic
-image::./pics/LightSensor_Schematic.jpg[]
+image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/Class02/HCDE_539_E1/pics/LightSensor_Schematic.jpg?raw=true[alt="jpg image.",width=100%,height=100%]
 
 == Serial Monitor Output
-image::./pics/LightSensor_SerialMonitorAnnotated.jpg[]
+image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/Class02/HCDE_539_E1/pics/LightSensor_SerialMonitorAnnotated.jpg?raw=true[alt="jpg image.",width=100%,height=100%]
 
 == Problems, Successes Learnings
 Didn't get good readings withe the recommended 10 kOhm resistor; worked much better with 220 Ohms.
@@ -125,13 +125,13 @@ Didn't get good readings withe the recommended 10 kOhm resistor; worked much bet
 Per class instructions, used a temperature sensor for schematics. Relied on https://cdn-shop.adafruit.com/datasheets/US5881_rev007.pdf[Melexis data sheet] from https://www.adafruit.com/product/158[adafruit product page] for actual pin out and magnetic properties.
 
 == Photos
-image::./pics/MagneticSensor_Photo.jpg[]
+image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/Class02/HCDE_539_E1/pics/MagneticSensor_Photo.jpg?raw=true[alt="jpg image.",width=100%,height=100%]
 
 == Schematic
-image::./pics/MagneticSensor_Schematic.jpg[]
+image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/Class02/HCDE_539_E1/pics/MagneticSensor_Schematic.jpg?raw=true[alt="jpg image.",width=100%,height=100%]
 
 == Serial Monitor Output
-image::./pics/MagneticSesnor_SerialMonitorAnnotated.jpg[]
+image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/Class02/HCDE_539_E1/pics/MagneticSesnor_SerialMonitorAnnotated.jpg?raw=true[alt="jpg image.",width=100%,height=100%]
 
 == Problems, Successes Learnings
 Took awhile get the reading to respond to the rare earth magnet.  This time, I elminated the resistor completely. Also found that the hall effect only responds to one pole (South I believe) from the magnet.  Found this out empirically by waving the magnet and watching the serial monitor.  Looking back at the data sheet, it's badically what they predicted.
@@ -140,13 +140,13 @@ Took awhile get the reading to respond to the rare earth magnet.  This time, I e
 A quick look at the datashet for the https://www.adafruit.com/product/169[servo], suggested it's more for digital rather than analog interfacing.  From what little I know about servos, their motion is limited, in contrast to a free spinning motor.  So for this one, I skipped the servo and used the https://www.adafruit.com/product/1201[vibrating mini motor disc] instead.
 
 == Photos
-image::./pics/Motor_Photo.jpg[]
+image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/Class02/HCDE_539_E1/pics/Motor_Photo.jpg?raw=true[alt="jpg image.",width=100%,height=100%]
 
 == Schematic
-image::./pics/Motor_Schematic.jpg[]
+image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/Class02/HCDE_539_E1/pics/Motor_Schematic.jpg?raw=true[alt="jpg image.",width=100%,height=100%]
 
 == Serial Monitor Output
-image::./pics/Moto_SerialMonitorAnnotated.jpg[]
+image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/Class02/HCDE_539_E1/pics/Moto_SerialMonitorAnnotated.jpg?raw=true[alt="jpg image.",width=100%,height=100%]
 
 == Problems, Successes Learnings
 The challenge with this one was getting those thin wires to stay in the breadboard. Ended up cutting a couple https://www.adafruit.com/product/153[jumper wires] in half, stripping the cut ends, and twisting them onto the motor leads.
@@ -155,13 +155,13 @@ The challenge with this one was getting those thin wires to stay in the breadboa
 For my wild card, I chose the https://www.adafruit.com/product/356[potentiometer], using the wiring suggested an https://learn.adafruit.com/adafruit-arduino-lesson-8-analog-inputs/an-experiment[adafruit experiment].
 
 == Photos
-image::./pics/WildCard_Photo.jpg[]
+image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/Class02/HCDE_539_E1/pics/WildCard_Photo.jpg?raw=true[alt="jpg image.",width=100%,height=100%]
 
 == Schematic
-image::./pics/WildcardPOT_Schematic.jpg[]
+image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/Class02/HCDE_539_E1/pics/WildcardPOT_Schematic.jpg?raw=true[alt="jpg image.",width=100%,height=100%]
 
 == Serial Monitor Output
-image::./pics/WildCardPOT_SerialMonitorAnnotated.jpg[]
+image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/Class02/HCDE_539_E1/pics/WildCardPOT_SerialMonitorAnnotated.jpg?raw=true[alt="jpg image.",width=100%,height=100%]
 
 == Problems, Successes, Learnings
 This one went pretty smoothly, once I found the breadboard experiment.

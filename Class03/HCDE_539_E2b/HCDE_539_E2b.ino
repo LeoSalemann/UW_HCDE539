@@ -52,8 +52,22 @@ void loop()
   
   int action = butt.checkButtonAction();
 
-  if (action == Button::PRESSED) {
+  // if clicked, start the tone
+  if (action == Button::CLICKED) {
+    Serial.println("on");
+
+  }
+  // if held, stop the tone
+  if (action == Button::HELD_CLICKED) {
+    Serial.println("off");
+  }
+ 
+ // if (action == Button::PRESSED) {
+ 
+ /*   
+  if (action == Button::HELD_CLICKED) {
     Serial.println("pressed");
     playTune(1000);
   } 
+  */
 }
