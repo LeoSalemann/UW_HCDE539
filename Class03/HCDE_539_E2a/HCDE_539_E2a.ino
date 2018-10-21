@@ -2,7 +2,7 @@
  * Leo Salemann
  * HCDE 539 Physical Computing
  * University of Washinton
- * Assignment E2 Integrated Builds
+ * Assignment E2 Integrated Builds part A: Dimmer switch
  * 
  * Sources: 
  *   LED fader/PWM: https://www.arduino.cc/en/Tutorial/Fade
@@ -58,6 +58,6 @@ void loop()
   analogWrite(pinLED, brightness);
   
       
-  delay (500);
+  // delay (500); //comment out for faster LED reaction.
 }
 
