@@ -17,6 +17,7 @@ const int buzzPin = 8;
 Button butt (buttPin);
 
 boolean buzzing = false;
+int milliseconds = 0;
 
 void setup()
 {
@@ -26,11 +27,36 @@ void setup()
   pinMode(ledPin, OUTPUT);
 }
 
+/*
+ * Funny story here: I had mispelled milliseconds in the argument spec,
+ * using one l isntead of two.  So when I tried pressing the buttion, the 
+ * delay was always zero, and I never got a tone.
+ */
+void playTune (int milliseconds){
+  // buzzing = true;
+  digitalWrite(ledPin, HIGH);
+  tone (buzzPin, 400, 100);  
+  Serial.println("buzz...");
+  
+  delay(milliseconds);
+  
+  digitalWrite(ledPin, LOW);
+  noTone(buzzPin);
+  Serial.println("...off");
+}
+
 
 void loop()
 {
   
   int action = butt.checkButtonAction();
+
+  if (action == Button::PRESSED) {
+    Serial.println("pressed");
+    playTune(1000);
+  } 
+
+/*  
   if (action == Button::PRESSED) {
     Serial.println("pressed");
     buzzing = ! buzzing;
@@ -38,7 +64,9 @@ void loop()
   } else {
     Serial.println("no press");
   }
-
+*/
+  
+/*
  // Serial.println(buzzing);
   if (buzzing) {
     digitalWrite(ledPin, HIGH);
@@ -47,5 +75,5 @@ void loop()
     digitalWrite(ledPin, LOW);
     noTone(buzzPin);
   }
-
+*/
 }
