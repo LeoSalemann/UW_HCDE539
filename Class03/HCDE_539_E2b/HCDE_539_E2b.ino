@@ -1,3 +1,13 @@
+/****************************************
+ * Leo Salemann
+ * HCDE 539 Physical Computing
+ * University of Washinton
+ * Assignment E2 Integrated Builds part A: Dimmer switch
+ * 
+ * Sources: 
+ *   Tinkercad stae change detection demo
+ *****************************************/
+ 
 /*
 
   State change detection (edge detection)
@@ -29,9 +39,12 @@ int lastButtonState = 0;
 
 int buttonPushCounter = 0;
 
+int pinButton = 4;
+int pinLED = 13;
+
 void setup()
 {
-  pinMode(2, INPUT);
+  pinMode(pinButton, INPUT);
   Serial.begin(9600);
 
   pinMode(13, OUTPUT);
@@ -40,7 +53,7 @@ void setup()
 void loop()
 {
   // read the pushbutton input pin
-  buttonState = digitalRead(2);
+  buttonState = digitalRead(pinButton);
   // compare the buttonState to its previous state
   if (buttonState != lastButtonState) {
     // if the state has changed, increment the counter
@@ -67,8 +80,8 @@ void loop()
   // the modulo function gives you the remainder of
   // the devision of two numbers
   if (buttonPushCounter % 4 == 0) {
-    digitalWrite(13, HIGH);
+    digitalWrite(pinLED, HIGH);
   } else {
-    digitalWrite(13, LOW);
+    digitalWrite(pinLED, LOW);
   }
 }
