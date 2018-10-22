@@ -6,8 +6,13 @@
 :Title: Assignment E2: Integrated Builds
 
 = {Title}
+
 == Light Dimmer Switch
-=== {Author}
+
+=== {Author}  {Email}
+
+=== HCDE 539 Physical Computing
+=== University of Washinton
 === {Date}
 
 == Overview
