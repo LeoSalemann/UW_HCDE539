@@ -16,7 +16,7 @@
 Describe your project
 
 == Build Photos
-image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/HCDE_539_Template/LightSensor_Photo.jpg?raw=true[alt="Photo.",width=100%,height=100%]
+image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/HCDE_539_Template/Photo.jpg?raw=true[alt="Photo.",width=100%,height=100%]
 
 == Sketch code
 
@@ -50,10 +50,10 @@ void loop() {
 ----
 
 == Schematic
-image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/HCDE_539_Template/LightSensor_Schematic.jpg?raw=true[alt="Schematic.",width=100%,height=100%]
+image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/HCDE_539_Template/Schematic.jpg?raw=true[alt="Schematic.",width=100%,height=100%]
 
 == Serial Monitor Output
-image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/HCDE_539_Template/SerialMoitor_PhotoSensorMarkUp.jpg?raw=true[alt="Serial Montior.",width=100%,height=100%]
+image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/HCDE_539_Template/SerialMoitor.jpg?raw=true[alt="Serial Montior.",width=100%,height=100%]
 
 == Problems, Sucesses, Learnings
 Talk about the thorns & roses.
