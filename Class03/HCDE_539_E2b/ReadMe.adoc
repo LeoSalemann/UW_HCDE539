@@ -5,10 +5,12 @@
 :License: Public Domain
 :Title: Assingment X-test
 
-= Assignment Title
+= {Title}
 
-== {Title}
-=== {Author}
+=== {Author}  {Email}
+
+=== HCDE 539 Physical Computing
+=== University of Washinton
 === {Date}
 
 == Overview
