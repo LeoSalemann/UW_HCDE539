@@ -1,22 +1,26 @@
 :Author: Leo Salemann
 :Email: {leos@uw.edu}
-:Date: dd/mm/2018
+:Date: 22/10/2018
 :Revision: version#
 :License: Public Domain
-:Title: Assingment X-test
+:Title: Assignment E2: Integrated Builds
 
 = Assignment Title
 
 == {Title}
+== Light Dimmer Switch
 === {Author}
 === {Date}
 
 == Overview
 
-Describe your project
+Good thing I picked a potentiometer for the "Wildcard" part of Assingment E1.  I was able to use it as-is, just adding the LED part to it.  First time I ran across Pulse Width Modulation (PWM) was while mentoring a FIRST Robotics team (FRC 1983 Sunk Works Robotics). It was tricky stuff back then, but I'm pleased to see it's simply a matter of chossing the right digital ouptut pin here.  Thanks, Arduino!
 
 == Build Photos
 image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/Class03/HCDE_539_E2a/Photo.jpg?raw=true[alt="Photo.",width=100%,height=100%]
+
+Also see a video of the device in action.
+video::LLU0yaFLUXY[youtube]
 
 == Sketch code
 
