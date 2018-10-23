@@ -2,7 +2,7 @@
  * Leo Salemann
  * HCDE 539 Physical Computing
  * University of Washinton
- * Assignment E2 Integrated Builds part A: Dimmer switch
+ * Assignment E2 Integrated Builds part B: Dimmer switch
  * 
  * Sources: 
  *   Tinkercad stae change detection demo
