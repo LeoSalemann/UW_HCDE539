@@ -103,16 +103,26 @@ image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/Class03/HCDE_539_E2
 
 In order to get a good serital monitor output, I had to introduce a 500ms delay, to prevent the text from streaming past the screen too fast.  Problem is, it also slows down the LED response.  So I comment out the delay when demonstrating the LED; and put it bac in for serial monotoring.
 
-Here's a screenshot with the daly in place ..
+Here's a screenshot with the daly in place.
+
 
 image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/Class03/HCDE_539_E2a/SerialMoitor.jpg?raw=true[alt="Serial Montior.",width=100%,height=100%]
 
-... and if you go back to the video, you can see the monotor at max speed with no delay. 
+
+
+If you go back to the video, you can see the monotor at max speed with no delay. 
 
 video::LLU0yaFLUXY[youtube]
 
 == Problems, Sucesses, Learnings
 I still have both sub-assignments on one board, but this time the code is separate.  Thought I was being clever in combining all my E1 code into one file; turned out to be a bit of a mistake. I'm usually a big fan of modularity; don't know what I was thinking. Choosing the potentiometer as my wildcard project last week was a lucky break; as well as getting introducted to the map() function early in the class.
+
+=== Resources
+- https://github.com/LeoSalemann/UW_HCDE539/tree/master/Class03/HCDE_539_E2a[github repo]
+
+- https://www.tinkercad.com/things/inLhfe8CpAR[tinkercad project]
+
+- https://create.arduino.cc/editor/leos/801ec5b2-2624-4324-9108-5c0a1b92e0a2/preview[arduino web editor project]
 
 === License
 This project is released under a {License} License.
