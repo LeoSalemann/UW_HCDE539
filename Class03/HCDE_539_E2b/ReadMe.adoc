@@ -133,7 +133,7 @@ void loop()
 image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/Class03/HCDE_539_E2b/Schematic.jpg?raw=true[alt="Schematic.",width=100%,height=100%]
 
 == Serial Monitor Output
-image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/Class03/HCDE_539_E2b/SerialMoitor.jpg?raw=true[alt="Serial Montior.",width=100%,height=100%]
+image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/Class03/HCDE_539_E2b/SerialMoitor.jpg?raw=true[alt="Serial Montior",width=100%,height=100%]
 
 == Problems, Sucesses, Learnings
 One of the first things I did with the sample code was get rid of those dreadful hard-coded pin numbers and put in some variables like a civlized person. I fumbled around with the button/resistor/5V arrangment. I ended up with a pull-down instead of pullup resistor; but hey, it works. As I was looking around at code samples, I found some cute samples that caused the buzzer to play a little tune. That would requrie a full refactoring though, as I'd need to trigger off of a traditional click event instead of the buttown-down/button-up edge events.  Maybe next time.
