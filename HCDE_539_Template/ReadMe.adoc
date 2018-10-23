@@ -1,5 +1,5 @@
 :Author: Leo Salemann
-:Email: {leos@uw.edu}
+:Email: leos@uw.edu
 :Date: dd/mm/2018
 :Revision: version#
 :License: Public Domain

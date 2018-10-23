@@ -1,5 +1,5 @@
 :Author: Leo Salemann
-:Email: {leos@uw.edu}
+:Email: leos@uw.edu
 :Date: 22/10/2018
 :Revision: version#
 :License: Public Domain
@@ -22,7 +22,7 @@ Good thing I picked a potentiometer for the "Wildcard" part of Assingment E1.  I
 == Build Photos
 image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/Class03/HCDE_539_E2a/Photo.jpg?raw=true[alt="Photo.",width=100%,height=100%]
 
-Also see a video of the device in action.
+Here's a video of the device in action.
 
 video::LLU0yaFLUXY[youtube]
 
@@ -112,35 +112,10 @@ image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/Class03/HCDE_539_E2
 video::LLU0yaFLUXY[youtube]
 
 == Problems, Sucesses, Learnings
-I still have both sub-assingments on one board, but this time the code is separate. Choosing the potentiometer as my wildcard project last week was a lucky break; as well as getting introducted to the map() function early in the class.
-
-
-=== Folder structure
-
-....
- sketch123                => Arduino sketch folder
-  ├── sketch123.ino       => main Arduino file
-  ├── schematics.png      => (optional) an image of the required schematics
-  ├── layout.png          => (optional) an image of the layout
-  └── ReadMe.adoc         => this file
-....
+I still have both sub-assignments on one board, but this time the code is separate.  Thought I was being clever in combining all my E1 code into one file; turned out to be a bit of a mistake. I'm usually a big fan of modularity; don't know what I was thinking. Choosing the potentiometer as my wildcard project last week was a lucky break; as well as getting introducted to the map() function early in the class.
 
 === License
 This project is released under a {License} License.
-
-=== Contributing
-To contribute to this project please contact leos https://id.arduino.cc/leos
-
-=== BOM
-Add the bill of the materials you need for this project.
-
-|===
-| ID | Part name      | Part number | Quantity
-| R1 | 10k Resistor   | 1234-abcd   | 10
-| L1 | Red LED        | 2345-asdf   | 5
-| A1 | Arduino Zero   | ABX00066    | 1
-|===
-
 
 === Help
 This document is written in the _AsciiDoc_ format, a markup language to describe documents.

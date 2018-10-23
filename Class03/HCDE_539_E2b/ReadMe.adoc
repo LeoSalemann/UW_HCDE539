@@ -17,7 +17,7 @@
 
 == Overview
 
-In this implementation, the doorbell acts like an old-timey buzzer. A tone starts when the button is pushed and stops when the button is released.
+In this implementation, the doorbell acts like an old-timey buzzer. A tone starts when the button is pushed and stops when the button is released.  I based my circuit and code off of the https://www.tinkercad.com/things/iuQmPwCoU9x[tikercad.com state change detection sample]. A curious side effect or the sample, is that it uses a pull-down resistor arrangment instead of pull-up.
 
 == Build Photos
 image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/Class03/HCDE_539_E2b/Photo.jpg?raw=true[alt="Photo.",width=100%,height=100%]
@@ -30,7 +30,7 @@ image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/Class03/HCDE_539_E2
  * Leo Salemann
  * HCDE 539 Physical Computing
  * University of Washinton
- * Assignment E2 Integrated Builds part A: Dimmer switch
+ * Assignment E2 Integrated Builds part B: Dimmer switch
  * 
  * Sources: 
  *   Tinkercad stae change detection demo
@@ -136,35 +136,17 @@ image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/Class03/HCDE_539_E2
 image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/Class03/HCDE_539_E2b/SerialMoitor.jpg?raw=true[alt="Serial Montior.",width=100%,height=100%]
 
 == Problems, Sucesses, Learnings
-Talk about the thorns & roses.
+One of the first things I did with the sample code was get rid of those dreadful hard-coded pin numbers and put in some variables like a civlized person. I fumbled around with the button/resistor/5V arrangment. I ended up with a pull-down instead of pullup resistor; but hey, it works. As I was looking around at code samples, I found some cute samples that caused the buzzer to play a little tune. That would requrie a full refactoring though, as I'd need to trigger off of a traditional click event instead of the buttown-down/button-up edge events.  Maybe next time.
 
+=== Resources
+- https://github.com/LeoSalemann/UW_HCDE539/tree/master/Class03/HCDE_539_E2b[github repo]
 
-=== Folder structure
+- https://www.tinkercad.com/things/j6n3j7f0yfj-door-buzzer[tinkercad project]
 
-....
- sketch123                => Arduino sketch folder
-  ├── sketch123.ino       => main Arduino file
-  ├── schematics.png      => (optional) an image of the required schematics
-  ├── layout.png          => (optional) an image of the layout
-  └── ReadMe.adoc         => this file
-....
+- https://create.arduino.cc/editor/leos/a270f377-7dbe-403c-8862-edd41fe0c3d9/preview[arduino web editor project]
 
 === License
 This project is released under a {License} License.
-
-=== Contributing
-To contribute to this project please contact leos https://id.arduino.cc/leos
-
-=== BOM
-Add the bill of the materials you need for this project.
-
-|===
-| ID | Part name      | Part number | Quantity
-| R1 | 10k Resistor   | 1234-abcd   | 10
-| L1 | Red LED        | 2345-asdf   | 5
-| A1 | Arduino Zero   | ABX00066    | 1
-|===
-
 
 === Help
 This document is written in the _AsciiDoc_ format, a markup language to describe documents.
