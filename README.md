@@ -11,8 +11,9 @@
 - [asciidocLIVE](https://asciidoclive.com)
 
 # Class Work
-- Homeworks in Class01, 02, 03
-- Final project in Arduino Model Flight Simulator, migrated from Azure DevOps
+- Homeworks in _Class01, 02, 03_
+- Final project in _Arduino Model Flight Simulator_, migrated from Azure DevOps
+- Wiki Describning the final project at _HCDE-Final-Project-wiki/_, also migrated from Azure DevOps
 
 # Issues Encountered
 Asciidoc can be a bit jarring if you're used to markdown, particularly if you're trying to print to PDF.  The most mainless approach I've found involves the online reource [asciidocLIVE](https://asciidoclive.com).  The tricky part is that your image paths have to be full https links.  If you'r images are on github, right click each one and do a _Copy Image path_ You should get a link that looks like _https://github.com/username/reponame/**blob**/image.jpg?raw=true_
