@@ -7,7 +7,7 @@
 - [tinkercad circuits](https://www.tinkercad.com/#/dashboard?type=circuits)
 - [Fritzing (for schematics)](http://fritzing.org/home/)
 - [Arduino Web Editor](https://create.arduino.cc/)
-- [Arduino IDED(when I need heavy libraries)](https://www.arduino.cc/en/Main/Software)
+- [Arduino IDD(when I need heavy libraries)](https://www.arduino.cc/en/Main/Software)
 - [asciidocLIVE](https://asciidoclive.com)
 
 # Class Work
