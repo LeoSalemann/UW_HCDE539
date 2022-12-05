@@ -1,0 +1,172 @@
+:Author: leos
+:Email: leos@uw.edu
+:Date: 14/10/2018
+:Revision: version#
+:License: Public Domain
+
+= Individual Builds (Sensors, Motors, Wildcard)
+
+Leo J.Salemann, leow@uw.edu
+
+Designed and simulated with https://www.tinkercad.com[Autodesk(R) Tinkercad(TM)]
+
+Deployed to Adafruit Metro with https://create.arduino.cc[Ardino Web Editor]
+
+Posted to https://create.arduino.cc/projecthub/projects/9cd996[Arduino Project Hub]
+
+Submitted for Exercise 1, HCDE 539 Physical Computing, University of Washington
+
+October 15, 2018
+
+= Overview
+For the initial design and implementation, I created a "Sensor Smorgasbord" project in which I combined all four individual builds onto one bread board, and wrote a single program to run everything. The project was "born in the cloud" using TinkerCad and the Arduino Web Editor. I then reimplmented the Smorgasboard in Fritzing, then made copies to reduce it down to Light sensor only, Magnetic Sensor only, etc. 
+
+== Breadboard
+.Sensor Smorgasbord (Fritzlab & Photo)
+image::./pics/SensorSmorgasbord.jpg[]
+
+== Sketch code (same code used for all circuits)
+----
+/****************************************
+ * Leo Salemann
+ * HCDE 539 Physical Computing
+ * University of Washinton
+ * Assignment E0 Traffic Light
+ * 
+ * sources: 
+ * https://www.adafruit.com/product/161
+ * Potentiometery code
+ * https://learn.adafruit.com/adafruit-arduino-lesson-8-analog-inputs/an-experiment
+ *****************************************/
+
+// Set some pins & other constants
+const int pinPhotoSensor  = A0;   // must be an analog pin !!
+const int pinHallFXsensor = A1;
+const int pinMotor        = A2;
+const int pinPot          = A4;
+
+const int motorMinValue = 1;
+
+// Set some initial values
+// For inputs, use -999 as a "sentinel" value. 
+// The first readying from the sensor shoudl be non-negative.
+int lightValue = -999;  
+int hallVaue = -999;  
+int motorValue = 1;
+int potValue = -999;  
+
+void setup()
+{
+  // setup  pinmodes
+  pinMode(pinPhotoSensor,  INPUT);
+  pinMode(pinHallFXsensor, INPUT);
+  pinMode(pinMotor,        OUTPUT);
+  pinMode(pinPot,          INPUT);
+
+  
+  // setup the serial port for sending data to the serial monitor or host computer
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  // print first, so we get initial values on the first iteration.
+  Serial.print("photocel = ");
+  Serial.print(lightValue);
+  
+  Serial.print("  hall effect = ");
+  Serial.print(hallVaue);
+  
+  
+  Serial.print("  motor = ");
+  Serial.print(motorValue);
+  
+  Serial.print("  pot = ");
+  Serial.print(potValue);
+  
+  Serial.println("");
+  
+  // read some inputs
+  lightValue = analogRead(pinPhotoSensor);  // photosensor
+  hallVaue   = analogRead(pinHallFXsensor); // hall effect sensor
+  potValue   = analogRead(pinPot);          // pot
+  
+  // write some outputs
+  analogWrite(pinMotor, motorValue);
+ 
+  
+  // change some variables for next iteration;
+  if (motorValue >= 1024){
+    motorValue = motorMinValue;
+  }else{
+    motorValue = motorValue * 2;
+  }
+      
+  delay (500);
+}
+----
+
+= Light Sensor
+The light sensor is implemented according to the adaffruit description at https://www.adafruit.com/product/161. One pin is connected to 5V; the other is connected to Arduino Analog pin A0 as well as a grounded 220 ohm resistor. The code initializes the pin as input, reads it, and prints a value to the serial monitor. Values range from 22 in a dark room, 735 under regular room lighting, and 1017  when illuminted by an iPhone "flashlight" at point-blank range.
+
+== Photos
+image::./pics/LightSensor_Photo.jpg[]
+
+== Schematic
+image::./pics/LightSensor_Schematic.jpg[]
+
+== Serial Monitor Output
+image::./pics/LightSensor_SerialMonitorAnnotated.jpg[]
+
+== Problems, Successes Learnings
+Didn't get good readings withe the recommended 10 kOhm resistor; worked much better with 220 Ohms.
+
+= Magnetic Sensor
+Per class instructions, used a temperature sensor for schematics. Relied on https://cdn-shop.adafruit.com/datasheets/US5881_rev007.pdf[Melexis data sheet] from https://www.adafruit.com/product/158[adafruit product page] for actual pin out and magnetic properties.
+
+== Photos
+image::./pics/MagneticSensor_Photo.jpg[]
+
+== Schematic
+image::./pics/MagneticSensor_Schematic.jpg[]
+
+== Serial Monitor Output
+image::./pics/MagneticSesnor_SerialMonitorAnnotated.jpg[]
+
+== Problems, Successes Learnings
+Took awhile get the reading to respond to the rare earth magnet.  This time, I elminated the resistor completely. Also found that the hall effect only responds to one pole (South I believe) from the magnet.  Found this out empirically by waving the magnet and watching the serial monitor.  Looking back at the data sheet, it's badically what they predicted.
+
+= Motor
+A quick look at the datashet for the https://www.adafruit.com/product/169[servo], suggested it's more for digital rather than analog interfacing.  From what little I know about servos, their motion is limited, in contrast to a free spinning motor.  So for this one, I skipped the servo and used the https://www.adafruit.com/product/1201[vibrating mini motor disc] instead.
+
+== Photos
+image::./pics/Motor_Photo.jpg[]
+
+== Schematic
+image::./pics/Motor_Schematic.jpg[]
+
+== Serial Monitor Output
+image::./pics/Moto_SerialMonitorAnnotated.jpg[]
+
+== Problems, Successes Learnings
+The challenge with this one was getting those thin wires to stay in the breadboard. Ended up cutting a couple https://www.adafruit.com/product/153[jumper wires] in half, stripping the cut ends, and twisting them onto the motor leads.
+
+= Wildcard (Potentiometer)
+For my wild card, I chose the https://www.adafruit.com/product/356[potentiometer], using the wiring suggested an https://learn.adafruit.com/adafruit-arduino-lesson-8-analog-inputs/an-experiment[adafruit experiment].
+
+== Photos
+image::./pics/WildCard_Photo.jpg[]
+
+== Schematic
+image::./pics/WildcardPOT_Schematic.jpg[]
+
+== Serial Monitor Output
+image::./pics/WildCardPOT_SerialMonitorAnnotated.jpg[]
+
+== Problems, Successes, Learnings
+This one went pretty smoothly, once I found the breadboard experiment.
+
+=== Help
+This document is written in the _AsciiDoc_ format, a markup language to describe documents. 
+If you need help you can search the http://www.methods.co.nz/asciidoc[AsciiDoc homepage]
+or consult the http://powerman.name/doc/asciidoc[AsciiDoc cheatsheet]

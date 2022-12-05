@@ -1,0 +1,130 @@
+:Author: Leo Salemann
+:Email: leos@uw.edu
+:Date: 22/10/2018
+:Revision: version#
+:License: Public Domain
+:Title: Assignment E2: Integrated Builds
+
+= {Title}
+
+== Light Dimmer Switch
+
+=== {Author}  {Email}
+
+=== HCDE 539 Physical Computing
+=== University of Washinton
+=== {Date}
+
+== Overview
+
+Good thing I picked a potentiometer for the "Wildcard" part of Assingment E1.  I was able to use it as-is, just adding the LED/resistor  subassembly to it.  First time I ran across Pulse Width Modulation (PWM) was while mentoring a FIRST Robotics team (FRC 1983 Sunk Works Robotics). It was tricky stuff back then, but I'm pleased to see it's simply a matter of chossing the right digital ouptut pin here.  Thanks, Arduino!  Finally, I made use of the map() function to convert the potiometer's 1024-step range to the PWM/LED's 256-step. 
+
+== Build Photos
+image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/Class03/HCDE_539_E2a/Photo.jpg?raw=true[alt="Photo.",width=100%,height=100%]
+
+Here's a video of the device in action.
+
+video::LLU0yaFLUXY[youtube]
+
+== Sketch code
+
+[syntax, c]
+----
+/****************************************
+ * Leo Salemann
+ * HCDE 539 Physical Computing
+ * University of Washinton
+ * Assignment E2 Integrated Builds part A: Dimmer switch
+ * 
+ * Sources: 
+ *   LED fader/PWM: https://www.arduino.cc/en/Tutorial/Fade
+ *   Potentiometer: https://learn.adafruit.com/adafruit-arduino-lesson-8-analog-inputs/an-experiment
+ *   Mapping function: HCDE temperature example
+ *****************************************/
+
+// Set some pins & other constants
+const int pinPot          = A4;
+const int pinLED          = 9;   // the PWM pin the LED is attached to
+
+
+// Set some initial values
+// For inputs, use -999 as a "sentinel" value. 
+// The first readying from the sensor shoudl be non-negative.
+int potValue = -999;
+
+
+//from http://www.arduino.cc/en/Tutorial/Fade
+int brightness = 0;    // how bright the LED is
+int fadeAmount = 5;    // how many points to fade the LED by
+
+void setup()
+{
+  // setup  pinmodes
+  pinMode(pinPot, INPUT);
+  pinMode(pinLED, OUTPUT);
+  
+  // setup the serial port for sending data to the serial monitor or host computer
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  // print first, so we get initial values on the first iteration.
+  Serial.print("pot = ");
+  Serial.print(potValue);
+ 
+  Serial.print("  LED = ");
+  Serial.print(brightness);
+  
+  Serial.println("");
+  
+  // read some inputs
+  potValue   = analogRead(pinPot);          // pot
+  
+  // based on HCDE temperature example **get better citation**
+  // map Potentiiometer range (0-1023) to LED brigness range (0-255), 
+  // based on the range used in the adafruit fade xample
+  brightness  = map(potValue, 0, 1023, 0, 255);
+  
+  //from http://www.arduino.cc/en/Tutorial/Fade
+  analogWrite(pinLED, brightness);
+  
+      
+  // delay (500); //comment out for faster LED reaction.
+}
+
+
+----
+
+== Schematic
+image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/Class03/HCDE_539_E2a/Schematic.jpg?raw=true[alt="Schematic.",width=100%,height=100%]
+
+== Serial Monitor Output
+
+In order to get a good serital monitor output, I had to introduce a 500ms delay, to prevent the text from streaming past the screen too fast.  Problem is, it also slows down the LED response.  So I comment out the delay when demonstrating the LED; and put it bac in for serial monotoring.
+
+Here's a screenshot with the daly in place ..
+
+image::https://github.com/LeoSalemann/UW_HCDE539/blob/master/Class03/HCDE_539_E2a/SerialMoitor.jpg?raw=true[alt="Serial Montior.",width=100%,height=100%]
+
+... and if you go back to the video, you can see the monotor at max speed with no delay. 
+
+video::LLU0yaFLUXY[youtube]
+
+== Problems, Sucesses, Learnings
+I still have both sub-assignments on one board, but this time the code is separate.  Thought I was being clever in combining all my E1 code into one file; turned out to be a bit of a mistake. I'm usually a big fan of modularity; don't know what I was thinking. Choosing the potentiometer as my wildcard project last week was a lucky break; as well as getting introducted to the map() function early in the class.
+
+=== Resources
+- https://github.com/LeoSalemann/UW_HCDE539/tree/master/Class03/HCDE_539_E2a[github repo]
+
+- https://www.tinkercad.com/things/inLhfe8CpAR[tinkercad project]
+
+- https://create.arduino.cc/editor/leos/801ec5b2-2624-4324-9108-5c0a1b92e0a2/preview[arduino web editor project]
+
+=== License
+This project is released under a {License} License.
+
+=== Help
+This document is written in the _AsciiDoc_ format, a markup language to describe documents.
+If you need help you can search the http://www.methods.co.nz/asciidoc[AsciiDoc homepage]
+or consult the http://powerman.name/doc/asciidoc[AsciiDoc cheatsheet]
