@@ -12,6 +12,7 @@
 
 # Class Work
 - Homeworks in _Class01, 02, 03_
+- Sketches (code & ascii doc) in _Sketches_, downloaded from https://create.arduino.cc/
 - Final project in _Arduino Model Flight Simulator_, migrated from Azure DevOps
 - Wiki Describning the final project at _HCDE-Final-Project-wiki/_, also migrated from Azure DevOps
 
