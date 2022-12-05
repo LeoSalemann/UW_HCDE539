@@ -1,0 +1,1 @@
+This is where the arduino code lives.  I'll probably have a bunch of subfolders for various test harneses, and maybe soething called "main" to hold the real code.

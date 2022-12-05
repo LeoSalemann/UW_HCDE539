@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\BlueTooth",
+    "\\src\\BlueTooth\\hidmouse",
+    "\\src\\BlueTooth\\throttle",
+    "\\src\\JoystickServo"
+  ],
+  "SelectedNode": "\\src\\JoystickServo\\JoystickServo.ino",
+  "PreviewInSolutionExplorer": false
+}
